@@ -79,3 +79,5 @@
 /bin/gitolite*
 /bin/gl-*
 /bin/sshkeys-lint
+
+/.bash/local-aliases.sh

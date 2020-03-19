@@ -1,5 +1,6 @@
 # g = git
 alias g='git'
+alias gcm='g co master'
 
 # 'git' with no parameters loads interactive REPL
 git() {
