@@ -1,6 +1,6 @@
 [user]
-    name = Alberon Ltd.
-    email = info@alberon.co.uk
+    name = Nick Cook
+    email = nick@alberon.co.uk
 
 [core]
     excludesfile = ~/.gitignore-global
@@ -117,6 +117,10 @@
     web          = instaweb
     wipe         = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     wt           = worktree
+    yesterday    = log --decorate -p --since=yesterday
+
+[github]
+    user = TerminalSpirit
 
 [browser "none"]
     cmd = git-web-browser

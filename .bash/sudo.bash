@@ -12,6 +12,8 @@ if $HAS_TERMINAL && ! $WINDOWS; then
 
     # apt (formerly apt-get and apt-cache)
     if [ $UID -eq 0 ]; then
+        alias aar='add-apt-repository'
+        alias aar='add-apt-repository'
         alias agi='apt install'
         alias agr='apt remove'
         alias agar='apt autoremove'
@@ -19,8 +21,11 @@ if $HAS_TERMINAL && ! $WINDOWS; then
         alias agupdate='apt update'
         alias agupgrade='apt upgrade'
     else
+        alias aar='sudo add-apt-repository'
+        alias aar='sudo add-apt-repository'
         alias agi='sudo apt install'
         alias agr='sudo apt remove'
+        alias agac='sudo apt autoclean'
         alias agar='sudo apt autoremove'
         alias agu='sudo apt update && sudo apt full-upgrade'
         alias agupdate='sudo apt update'
